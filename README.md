@@ -27,6 +27,6 @@ This project is part of Phase II training Java FullStack Development program.
 | 	`service`	 | 	Contain all classes that do the hard/core work on the app	 |
 | 	`core`	 | 	Servlet classes	 |
 
-![alt text]https://github.com/eudagraca/learners-academy/blob/main/screens/login.png
+![alt text](https://github.com/eudagraca/learners-academy/blob/main/screens/login.png)
 
-![alt text]https://github.com/eudagraca/learners-academy/blob/main/screens/teachers.png
+![alt text](https://github.com/eudagraca/learners-academy/blob/main/screens/teachers.png)
