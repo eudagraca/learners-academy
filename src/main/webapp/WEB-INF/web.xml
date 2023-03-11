@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+
+	<servlet>
+		<servlet-name>teacherServlet</servlet-name>
+		<servlet-class>core.TeacherServLet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>teacherServlet</servlet-name>
+		<url-pattern>/teachers</url-pattern>
+		<url-pattern>/teachers/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>subjectServlet</servlet-name>
+		<servlet-class>core.SubjectServLet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>subjectServlet</servlet-name>
+		<url-pattern>/subjects</url-pattern>
+		<url-pattern>/subjects/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>studentServLet</servlet-name>
+		<servlet-class>core.StudentServLet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>studentServLet</servlet-name>
+		<url-pattern>/students</url-pattern>
+		<url-pattern>/students/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>classServLet</servlet-name>
+		<servlet-class>core.ClassSubServLet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>classServLet</servlet-name>
+		<url-pattern>/classes</url-pattern>
+		<url-pattern>/classes/*</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>assignServLet</servlet-name>
+		<servlet-class>core.AssignServLet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>assignServLet</servlet-name>
+		<url-pattern>/assignments</url-pattern>
+		<url-pattern>/assignments/*</url-pattern>
+	</servlet-mapping>
+</web-app>
