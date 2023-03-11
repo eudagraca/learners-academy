@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -43,8 +42,13 @@ public class MainApp extends HttpServlet {
 			throws ServletException, IOException {
 		String name = request.getParameter("username");
 		String pass = request.getParameter("password");
-
-	    response.sendRedirect("teacher");
+		System.out.println(name);
+		System.out.println(pass);
+		if ("root".equals(name) && "12345".equals(pass)) {
+			response.sendRedirect(request.getContextPath() + "/teachers");
+		} else {
+			response.sendRedirect(request.getContextPath() + "/");
+		}
 
 	}
 
